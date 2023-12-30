@@ -4,14 +4,14 @@
   <div class="description">{% translate 'Sign below' %}</div>
   {% endif %}
   <div>{% include 'django/forms/widgets/input.html' %}</div>
-  <div><canvas id="{{ signature_pad_widget.signature_pad_id }}"></canvas></div>
+  <div><canvas id="{{ signature_pad_widget.signature_pad_id }}" class="signaturePadCanvas"></canvas></div>
   {% if widget.value is None %}
   <div class="signaturePadPanel">
     {% if signature_pad_widget.options.saveButton %}
-    <button id="{{ signature_pad_widget.signature_pad_id }}_store" class="button">{% translate 'Save Signature' %}</button>
+    <input id="{{ signature_pad_widget.signature_pad_id }}_store" class="button signaturePadSave" type="button" value="{% translate 'Save Signature' %}" />
     {% endif %}
     {% if signature_pad_widget.options.resetButton %}
-    <input id="{{ signature_pad_widget.signature_pad_id }}_reset" class="button" type="reset" value="{% translate 'Reset' %}" >
+    <input id="{{ signature_pad_widget.signature_pad_id }}_reset" class="button signaturePadReset" type="reset" value="{% translate 'Reset' %}" />
     {% endif %}
   </div>
   {% endif %}

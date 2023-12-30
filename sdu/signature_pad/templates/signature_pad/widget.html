@@ -1,13 +1,18 @@
 {% load i18n %}
 <div class="signaturePadWrapper">
-  {% include 'django/forms/widgets/input.html' %}
-  <canvas id="{{ signature_pad_widget.signature_pad_id }}"></canvas>
   {% if widget.value is None %}
-  {% if signature_pad_widget.options.saveButton %}
-  <button id="{{ signature_pad_widget.signature_pad_id }}_save">{% translate 'Save Signature' %}"</button>
+  <div class="description">{% translate 'Sign below' %}</div>
   {% endif %}
-  {% if signature_pad_widget.options.resetButton %}
-  <input id="{{ signature_pad_widget.signature_pad_id }}_reset" class="button" type="reset" value="{% translate 'Reset' %}" >
-  {% endif %}
+  {% include 'django/forms/widgets/input.html' %}
+  <div><canvas id="{{ signature_pad_widget.signature_pad_id }}" class="signaturePadCanvas"></canvas></div>
+  {% if widget.value is None %}
+  <div class="signaturePadPanel">
+    {% if signature_pad_widget.options.saveButton %}
+    <input id="{{ signature_pad_widget.signature_pad_id }}_save" class="btn btn-outline-dark signaturePadSave" type="button" value="{% translate 'Save Signature' %}" />
+    {% endif %}
+    {% if signature_pad_widget.options.resetButton %}
+    <input id="{{ signature_pad_widget.signature_pad_id }}_reset" class="btn btn-outline-dark signaturePadReset" type="reset" value="{% translate 'Reset' %}" />
+    {% endif %}
+  </div>
   {% endif %}
 </div>
