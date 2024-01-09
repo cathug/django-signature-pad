@@ -1,0 +1,47 @@
+[build-system]
+requires = ['setuptools >= 61.0' ]
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools]
+packages = ['django_signature_pad']
+
+[project]
+name = 'django_signature_pad'
+description = 'A wrapper that adds signature capability to Django.'
+version = '0.1.dev1'
+dependencies = [
+    'Django ~= 4.2',
+]
+requires-python = '>= 3.8'
+
+authors = [
+    {name = 'Byron Chiang'},
+]
+
+readme = 'README.md'
+license = {file = 'LICENSE'}
+keywords = ['signature_pad', 'Django', 'signature']
+
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Environment :: Web Environment',
+    'Framework :: Django',
+    'Framework :: Django :: 4.2',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+
+[project.urls]
+Homepage = 'https://github.com/cathug/django-signature-pad'
+Repository = 'https://github.com/cathug/django-signature-pad.git'
+'Bug Tracker' = 'https://github.com/cathug/django-signature-pad/issues'
+Changelog = 'https://github.com/cathug/django-signature-pad/blob/master/CHANGELOG.md'
+
+
+[project.scripts]
+cli-npm-install = 'npm:NPMInstall'
+cli-npm-build = 'npm:NPMBuild'

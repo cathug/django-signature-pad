@@ -1,0 +1,15 @@
+# assets
+django_signature_pad/static/build
+django_signature_pad/static/src/assets
+node_modules/
+
+# compiler files
+__pycache__/
+*.py[cod]
+
+# tests
+django_signature_pad/tests/
+
+# package files
+dist
+*.egg-info

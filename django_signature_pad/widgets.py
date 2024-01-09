@@ -43,7 +43,7 @@ class SignatureWidget(HiddenInput):
         'invalid': _('No signature was added.'),
     }
 
-    template_name = 'signature_pad/wagtail_widget.html'
+    template_name = 'django_signature_pad/wagtail_widget.html'
     is_hidden = False
 
 
@@ -109,4 +109,4 @@ class SignatureWidget(HiddenInput):
 #     '''
 #     A signature widget for the wagtail admin interface
 #     '''
-#     template_name = 'signature_pad/wagtail_widget.html'
+#     template_name = 'django_signature_pad/wagtail_widget.html'

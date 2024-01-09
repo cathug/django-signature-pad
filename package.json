@@ -1,0 +1,33 @@
+{
+  "name": "signature_pad",
+  "version": "0.1.dev1",
+  "description": "Django Signature Pad Wrapper",
+  "main": "signature_pad.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-prod": "webpack --config webpack.prod.js && mkdocs build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cathug/django_signature_pad/"
+  },
+  "keywords": [
+    "SignaturePad",
+    "Django"
+  ],
+  "author": "Byron Chiang (cathug)",
+  "license": "WTFPL",
+  "dependencies": {
+    "signature_pad": "^4.1.7"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.33",
+    "postcss-loader": "^7.3.4",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0"
+  }
+}

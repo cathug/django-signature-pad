@@ -1,0 +1,19 @@
+/* 
+ * signature_pad.css
+ * stylesheet for signature pad widget
+ */
+
+canvas[id^="signature_pad_"] {
+  border: dashed grey;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.description {
+  color: grey;
+  text-align: start;
+}
+
+.signaturePadPanel {
+  justify-content: center;
+}
