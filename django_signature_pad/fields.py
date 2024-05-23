@@ -3,7 +3,7 @@ import base64
 from django.core.exceptions import ValidationError
 from django.db.models import Field
 from django.utils.translation import gettext_lazy as _
-from signature_pad.forms import SignatureField as SignatureFormField
+from django_signature_pad.forms import SignatureField as SignatureFormField
 
 
 def decode_data_uri(data_url):
@@ -89,6 +89,9 @@ class SignatureField(Field):
    
 
     def formfield(self, **kwargs):
+        '''
+        Specify a signature form field for a model field
+        '''
         return super().formfield(
             **{
                 'form_class': SignatureFormField,

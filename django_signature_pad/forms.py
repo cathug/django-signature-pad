@@ -3,8 +3,8 @@ from django.core import validators
 from django.utils.translation import gettext_lazy as _
 from django.core.exceptions import ValidationError
 
-from signature_pad.helpers import decode_data_uri
-from signature_pad.widgets import SignatureWidget
+from django_signature_pad.helpers import decode_data_uri
+from django_signature_pad.widgets import SignatureWidget
 
 
 class SignatureField(Field):

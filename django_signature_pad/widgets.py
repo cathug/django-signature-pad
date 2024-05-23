@@ -7,7 +7,7 @@ from django.templatetags.static import StaticNode
 from django.utils.html import html_safe, json_script
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext_lazy as _
-from signature_pad.settings import SIGNATURE_PAD_DEFAULT_CONFIG
+from django_signature_pad.settings import SIGNATURE_PAD_DEFAULT_CONFIG
 
 @html_safe
 class SignaturePadJSPath:
