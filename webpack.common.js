@@ -10,7 +10,7 @@ const path = require('path');
 
 const config = {
   entry: {
-    signature_pad: './django_signature_pad/static/src/js/signature_pad.js',
+    signature_pad: './django_signature_pad/src/js/signature_pad.js',
   },
 
   plugins: [

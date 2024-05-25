@@ -2,12 +2,12 @@ include LICENSE
 include COPYING
 include README.md
 include CHANGELOG.md
-include npm.py
-include webpack.common.js
-include webpack.prod.js
-include package.json
-include package-lock.json
+exclude webpack.common.js
+exclude webpack.prod.js
+exclude package.json
+exclude package-lock.json
 recursive-include django_signature_pad/static *
 recursive-include django_signature_pad/templates *
 recursive-include docs *
 recursive-exclude node_modules *
+recursive-exclude src *

@@ -40,8 +40,3 @@ Homepage = 'https://github.com/cathug/django-signature-pad'
 Repository = 'https://github.com/cathug/django-signature-pad.git'
 'Bug Tracker' = 'https://github.com/cathug/django-signature-pad/issues'
 Changelog = 'https://github.com/cathug/django-signature-pad/blob/master/CHANGELOG.md'
-
-
-[project.scripts]
-cli-npm-install = 'npm:NPMInstall'
-cli-npm-build = 'npm:NPMBuild'
