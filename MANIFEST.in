@@ -6,6 +6,8 @@ exclude webpack.common.js
 exclude webpack.prod.js
 exclude package.json
 exclude package-lock.json
+recursive-include django_signature_pad/locale *
+recursive-include django_signature_pad/migrations *
 recursive-include django_signature_pad/static *
 recursive-include django_signature_pad/templates *
 recursive-include docs *

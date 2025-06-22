@@ -1,3 +1,5 @@
+.venv
+
 # assets
 django_signature_pad/static/build
 django_signature_pad/static/src/assets

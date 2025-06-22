@@ -8,9 +8,9 @@ packages = ['django_signature_pad']
 [project]
 name = 'django_signature_pad'
 description = 'A wrapper that adds signature capability to Django.'
-version = '0.1.dev1'
+version = '0.1.dev2'
 dependencies = [
-    'Django ~= 4.2',
+    'Django >= 4.2',
 ]
 requires-python = '>= 3.8'
 
@@ -27,6 +27,9 @@ classifiers = [
     'Environment :: Web Environment',
     'Framework :: Django',
     'Framework :: Django :: 4.2',
+    'Framework :: Django :: 5.0',
+    'Framework :: Django :: 5.1',
+    'Framework :: Django :: 5.2',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
